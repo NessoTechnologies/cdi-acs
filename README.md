@@ -1,6 +1,6 @@
 ![Nesso Technologies Logo](/images/nesso_typemark_375px.png)
 
-# CDI/ACS Data
+# US Chronic Disease Indicators data enriched with American Community Survey Demographic and Housing Estimates
 
 ## Introduction
 
