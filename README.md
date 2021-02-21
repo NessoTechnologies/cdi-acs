@@ -31,4 +31,32 @@ PopulationMarginOfError	| Integer | The aggregate of the margins of error for th
 
 
 ## Enrichment Logic
+Each record in this dataset is created by joining an ACS file to a CDI file using a combination of Year, Location, and Stratification Category.
+
+### Year
+The CDI data is filtered to just those records with the same YearStart and YearEnd, and then joins to the data in ACS with the same Year.
+
+### Location
+The CDI data represents location using a pair of fields, LocationAbbr and LocationDesc.  For the most part, these refer to US states/territories.  The ACS data also represents location as state/territory in the NAME column.
+
+The CDI data also contains a “US/United States” location.  For this, the ACS data is aggregated across all states/territories.
+
+### Stratification Category
+The CDI data are further broken up into several gender and race/ethnicity categories and values.  These are represented in the StratificationCategory1 and Stratification1 fields.  The ACS data also break out several gender and race/ethnicity segments.  The dataset relates ACS data to CDI data using the following mapping:
+
+CDI Segment | ACS Estimate | ACS Margin of Error
+----------- | ------------ | -------------------
+Gender: Male | DP05_0002E | DP05_0002M
+Gender: Female | DP05_0003E | DP05_0003M
+Race/Ethnicity: Multiracial, non-Hispanic | DP05_0035E | DP05_0035M
+Race/Ethnicity: American Indian or Alaska Native | DP05_0039E | DP05_0039M
+Race/Ethnicity: Asian, non-Hispanic | DP05_0044E | DP05_0044M
+Race/Ethnicity: Asian or Pacific Islander | Sum of DP05_0044E and DP05_0052E | Aggregate of DP05_0044M and DP05_0052M
+Race/Ethnicity: Black, non-Hispanic | DP05_0038E | DP05_0038M
+Race/Ethnicity: Other, non-Hispanic | DP05_0057E | DP05_0057M
+Race/Ethnicity: White, non-Hispanic | DP05_0037E | DP05_0037M
+Race/Ethnicity: Hispanic | DP05_0071E | DP05_0071M
+Overall: Overall | Sum of DP05_0002E and DP05_0003E | Aggregate of DP05_0002M and DP05_0003M
+
+
 
