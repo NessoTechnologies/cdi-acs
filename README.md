@@ -4,7 +4,7 @@
 
 ## Introduction
 
-These files are created by enriching US Chronic Disease Indicators data with American Community Survey Demographic and Housing Estimates.
+These files are created by enriching US Chronic Disease Indicators (CDI) data with American Community Survey Demographic and Housing Estimates (ACS).
 
 These files are maintained by [Nesso Technologies, Inc.](https://nesso.io).  If you have any questions or issues with these files, please [create an issue](https://github.com/NessoTechnologies/cdi-acs/issues).  We'd love to hear from you!
 
