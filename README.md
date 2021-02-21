@@ -10,10 +10,11 @@ These files are maintained by [Nesso Technologies, Inc.](https://nesso.io).  If 
 
 ## Sources
 
-**Primary Dataset**: [US Chronic Disease Indicators (CDI)](https://catalog.data.gov/dataset/u-s-chronic-disease-indicators-cdi).  All fields from this dataset are included.  Only a single year is included (where YearStart and YearEnd are the same).  The year is included in the file name. 
+**Primary Dataset**: [US Chronic Disease Indicators (CDI)](https://catalog.data.gov/dataset/u-s-chronic-disease-indicators-cdi).  All fields from this dataset are included.  Only a single year is included (where YearStart and YearEnd are the same).  The year is included in the file name.  This dataset is sourced from the CDC, and is in the public domain.
 
 
-**Enrichment Dataset**: [American Community Survey (ACS) Demographic and Housing Estimates](https://data.census.gov/cedsci/table?q=United%20States&tid=ACSDP1Y2019.DP05&hidePreview=true).  Only population estimates and margins of error are included from this dataset, and only for the matching gender and race/ethnicity segments from the primary data.  Only data from the same year represented in the primary data are included.
+**Enrichment Dataset**: [American Community Survey (ACS) Demographic and Housing Estimates](https://data.census.gov/cedsci/table?q=United%20States&tid=ACSDP1Y2019.DP05&hidePreview=true).  Only population estimates and margins of error are included from this dataset, and only for the matching gender and race/ethnicity segments from the primary data.  Only data from the same year represented in the primary data are included.  This dataset is sourced from the Census Bureau, and is in the public domain.
+
 
 
 ## File Format
